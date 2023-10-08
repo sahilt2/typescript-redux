@@ -1,11 +1,13 @@
-import { Button, ButtonProps, styled } from "@mui/material";
+import Button, {ButtonProps} from "@mui/material/Button";
+import {styled} from "@mui/material/styles"
 
-const customButtonStyled = styled(Button)<ButtonProps>(({theme})=>({
+const CustomButtonStyled = styled(Button)<ButtonProps>(({theme})=>({
     backgroundColor:theme.palette.primary.main,
     color:theme.palette.primary.contrastText,
     '&:hover':{
-        backgroundColor:"pink"
+        backgroundColor:"pink",
+        color:"black"
     }
 }))
 
-export default customButtonStyled;
+export default CustomButtonStyled;
